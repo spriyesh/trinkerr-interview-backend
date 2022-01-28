@@ -102,3 +102,45 @@ plants = [282475249,622650073,984943658,144108930,470211272,101027544,457850878,
 sprinklers = [823564440,115438165,784484492,74243042,114807987,137522503,441282327,16531729,823378840,143542612]
 
 <b>Output</b>: 161834419
+</pre>
+
+
+---
+ ## Unique number conversion 
+
+ You are given 2 numbers `A` and `B`. You can perform two sets of operations, with the first operation, `O1`, you can `subtract 1 from the current number`. With the second operation, `O2`, you can `multiply the number by 2`. Given A, your task is to derive number B using these 2 sets of operations. Determine the minimum number of steps to convert A to B using these sets of operations.
+
+
+`Constraints`: 
+
+The first and the only line of the input contains two distinct integers `n and m` (`1 ≤ n, m ≤ 10`<sup>`4`</sup>)
+
+
+<b>`Sample Input 1`<b>
+<pre>
+
+<b>Input</b>: 
+
+A = 4, B = 6
+
+<b>Output</b>: 2
+<b>Explanation</b>: Use operation O<sub>1</sub> followed by operation O<sub>2</sub>.
+
+After O<sub>1</sub> we have 3. (Subtracting by one)
+After O<sub>2</sub> we have 6. (Multiplying by two)
+
+</pre>
+
+
+<b>`Sample Input 1`<b>
+<pre>
+
+<b>Input</b>: 
+
+A = 10, B = 1
+
+<b>Output</b>: 1
+</pre>
+
+
+
