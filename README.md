@@ -61,7 +61,7 @@ Now input has no occurrences of "xy".
 
 Chunnu has recently joined as a gardener. On the very first day of his job, he was given the task to configure the range of sprinklers. To ensure that all the plants get sufficient water, all the plants should be within the range of the sprinkler's radius. 
 
-He is completely unaware of how to solve this problem, so he calls you to help him. Help him in finding the `minimum radius` of the sprinklers so that all the plants are getting sufficient water. 
+He is completely unaware of how to solve this problem, so he calls you to help him. Help him in finding the minimum radius of the sprinklers so that all the plants are getting sufficient water. 
 
 You are given the coordinates of both, plants and sprinklers which are installed on a straight line, in the form of 2 arrays. 
 
@@ -71,7 +71,7 @@ You are given the coordinates of both, plants and sprinklers which are installed
 
 1 <= `plants.length, sprinklers.length` <=  10 <sup>5</sup> 
 
-1 <= ```plants[i], sprinklers[i] <= 10``` <sup>9</sup> 
+1 <= ```plants[i], sprinklers[i]``` <= 10 <sup>9</sup> 
 
 
 
