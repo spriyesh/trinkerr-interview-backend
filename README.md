@@ -116,7 +116,7 @@ sprinklers = [823564440,115438165,784484492,74243042,114807987,137522503,4412823
 The first and the only line of the input contains two distinct integers `n and m` (`1 ≤ n, m ≤ 10`<sup>`4`</sup>)
 
 
-<b>`Sample Input 1`<b>
+<b>`Sample Input 1`</b>
 <pre>
 
 <b>Input</b>: 
@@ -132,7 +132,7 @@ After O<sub>2</sub> we have 6. (Multiplying by two)
 </pre>
 
 
-<b>`Sample Input 1`<b>
+<b>`Sample Input 2`</b>
 <pre>
 
 <b>Input</b>: 
