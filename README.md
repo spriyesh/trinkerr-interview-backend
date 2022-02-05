@@ -52,34 +52,34 @@ sprinklers = [823564440,115438165,784484492,74243042,114807987,137522503,4412823
 
 ---
 
-## Eliminating the Unwants
-Suppose you are give 2 strings, one the `input` and the other one as the `unwant`. 
+## I in Trinkerr
 
-You need to find the occurence of the `unwant` string and remove it from the input. You need to basically remove all the `unwant` string occurences from the input.
+Given an input number `n`, you need to print the following pattern. 
 
-`Example-1`
+`Contraints`:
 
-input = "daabcbaabcbc", unwant = "abc"
+n >= 5 and `n` will be odd
 
-Output: "dab"
+`Sample Input`:
 
-Explanation: The following operations are done:
-- input = "daabcbaabcbc", remove "abc" starting at index 2, so input = "dabaabcbc".
-- input = "dabaabcbc", remove "abc" starting at index 4, input  = "dababc".
-- input = "dababc", remove "abc" starting at index 3, so input = "dab".
-Now s has no occurrences of "abc".
+n = 5
+```
+* * * * *
+    *
+    *
+    *
+* * * * *
+```
 
+n = 7 
+```
+* * * * * * *
+      *
+      *
+      *
+      *
+      *
+* * * * * * *
+```
 
-`Example-2`
-
-input = "axxxxyyyyb", unwant = "xy"
-
-Output: "ab"
-
-Explanation: The following operations are done:
-- input = "axxxxyyyyb", remove "xy" starting at index 4 so input = "axxxyyyb".
-- input = "axxxyyyb", remove "xy" starting at index 3 so input = "axxyyb".
-- input = "axxyyb", remove "xy" starting at index 2 so input = "axyb".
-- input = "axyb", remove "xy" starting at index 1 so input = "ab".
-
-Now input has no occurrences of "xy".
+`Note`: Please note that you shouldn't be printing extra spaces wherever it is not required. As extra spaces accounts for more space. You can select the sample output and check for spaces as well. 
