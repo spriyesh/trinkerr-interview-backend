@@ -58,7 +58,7 @@ Given an input number `n`, you need to print the following pattern.
 
 `Contraints`:
 
-n >= 5 and `n` will be odd
+`n` >= 5 and `n` will be odd
 
 `Sample Input`:
 
