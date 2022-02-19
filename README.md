@@ -64,4 +64,4 @@ Output:
 aaaacccc
 ```
 
-`Note`: You will be given the string with a's and c's only and all of them will be in lower case characters. But you need to make sure that you need to do the task as efficiently as possible. Sorting with take `O(nlogn)` time. 
+`Note`: You will be given the string with a's and c's only and all of them will be in lower case characters. But you need to make sure that you need to do the task as efficiently as possible. You are not allowed to use sorting as sorting will take `O(nlogn)` time,  where `n` corresponds to the length of the string. 
