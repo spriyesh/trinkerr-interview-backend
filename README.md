@@ -47,39 +47,21 @@ sprinklers = [823564440,115438165,784484492,74243042,114807987,137522503,4412823
 <b>Output</b>: 161834419
 </pre>
 
-
-
-
 ---
 
-## I in Trinkerr
+## Sorting the Characters
 
-Given an input number `n`, you need to print the following pattern. 
+Suppose you are given a string with 2 characters only. `a` and `c`. Your task is to output the result such that all the a's are on left side and all the c's are on the right side.
 
-`Contraints`:
+`Sample Input 1`
+```text
+Input:
 
-`n` >= 5 and `n` will be odd
+const str = "accacaca";
 
-`Sample Input`:
+Output: 
 
-n = 5
-```
-* * * * *
-    *
-    *
-    *
-* * * * *
+aaaacccc
 ```
 
-n = 7 
-```
-* * * * * * *
-      *
-      *
-      *
-      *
-      *
-* * * * * * *
-```
-
-`Note`: Please note that you shouldn't be printing extra spaces wherever it is not required. As extra spaces accounts for more space. You can select the sample output and check for spaces as well. 
+`Note`: You will be given the string with a's and c's only and all of them will be in lower case characters. But you need to make sure that you need to do the task as efficiently as possible. Sorting with take `O(nlogn)` time. 
