@@ -1,5 +1,25 @@
 # Trinkerr Backend Interview
 
+
+## Back to School
+Suppose you are given 2 strings which will include digits from 0-9 and the string can be of any length. You need to add those 2 strings and return the output as number. You need to do this as efficiently as possible. Again emphasizing on the point that the string can be of any length.
+
+`Example-1`
+
+```
+str1 = "123456"
+str2 = "312321"
+output = "435777"
+```
+
+`Example-2`
+
+```
+str1 = "123456"
+str2 = "123456"
+output = "246912"
+```
+---
 ## Watering plants
 
 Chunnu has recently joined as a gardener. On the very first day of his job, he was given the task to configure the range of sprinklers. To ensure that all the plants get sufficient water, all the plants should be within the range of the sprinkler's radius. 
@@ -47,24 +67,4 @@ sprinklers = [823564440,115438165,784484492,74243042,114807987,137522503,4412823
 <b>Output</b>: 161834419
 </pre>
 
----
-
-## Back to School
-Suppose you are given 2 strings which will include digits from 0-9 and the string can be of any length. You need to add those 2 strings and return the output as number. You need to do this as efficiently as possible. Again emphasizing on the point that the string can be of any length.
-
-`Example-1`
-
-```
-str1 = "123456"
-str2 = "312321"
-output = "435777"
-```
-
-`Example-2`
-
-```
-str1 = "123456"
-str2 = "123456"
-output = "246912"
-```
 ---
