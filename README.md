@@ -49,19 +49,22 @@ sprinklers = [823564440,115438165,784484492,74243042,114807987,137522503,4412823
 
 ---
 
-## Sorting the Characters
+## Back to School
+Suppose you are given 2 strings which will include digits from 0-9 and the string can be of any length. You need to add those 2 strings and return the output as number. You need to do this as efficiently as possible. Again emphasizing on the point that the string can be of any length.
 
-Suppose you are given a string with 2 characters only. `a` and `c`. Your task is to output the result such that all the a's are on left side and all the c's are on the right side.
+`Example-1`
 
-`Sample Input 1`
-```text
-Input:
-
-const str = "accacaca";
-
-Output: 
-
-aaaacccc
+```
+str1 = "123456"
+str2 = "312321"
+output = "435777"
 ```
 
-`Note`: You will be given the string with a's and c's only and all of them will be in lower case characters. But you need to make sure that you need to do the task as efficiently as possible. You are not allowed to use sorting as sorting will take `O(nlogn)` time,  where `n` corresponds to the length of the string. 
+`Example-2`
+
+```
+str1 = "123456"
+str2 = "123456"
+output = "246912"
+```
+---
