@@ -1,70 +1,76 @@
 # Trinkerr Backend Interview
 
 
-## Back to School
-Suppose you are given 2 strings which will include digits from 0-9 and the string can be of any length. You need to add those 2 strings and return the output as number. You need to do this as efficiently as possible. Again emphasizing on the point that the string can be of any length.
+## English Assignment
 
-`Example-1`
+Conan has recently joined an English speaking class. He is a french native and has limited proficiency in English. On the very first day, the teacher gave him an assignment. The task is to get the longest prefix which is common in every word. He came up with a trick to complete the assignment. He converted the alphabets into numbers and then find the longest common prefix. Help him get the prefix.
 
-```
-str1 = "123456"
-str2 = "312321"
-output = "435777"
-```
+<br>
 
-`Example-2`
+`Input`
+You are given a list of numbers in <b>string format</b>. 
 
-```
-str1 = "123456"
-str2 = "123456"
-output = "246912"
-```
+
+`Sample Input 1`
+<pre>
+<b>Input</b>: words_as_numbers = ["11232","121232","11111"]
+<b>Output</b>: "1"
+</pre>
+
+
+`Sample Input 2`
+<pre>
+<b>Input</b>: words_as_numbers = ["11232","1123123213","11232", "112333913", "1123122"]
+<b>Output</b>: "1123"
+</pre>
+
+
+
 ---
-## Watering plants
+## Designing File system
 
-Chunnu has recently joined as a gardener. On the very first day of his job, he was given the task to configure the range of sprinklers. To ensure that all the plants get sufficient water, all the plants should be within the range of the sprinkler's radius. 
-
-He is completely unaware of how to solve this problem, so he calls you to help him. Help him in finding the minimum radius of the sprinklers so that all the plants are getting sufficient water. 
-
-You are given the coordinates of both, plants and sprinklers which are installed on a straight line, in the form of 2 arrays. 
+You are a computer architect who is designing the file system for your operating system. The basic constraint for designing the file system is handling names in the directory. You cannot allow the same name for two files. Design a program to ensure the unique name of files. If there is already a file with the given name, add a number, i, surrounded by brackets to ensure uniqueness, such that this i is the smallest positive number, and the new name obtained is also unique.
 
 
+`Input`: 
 
-`Constraints`: 
-
-1 <= `plants.length, sprinklers.length` <=  10 <sup>5</sup> 
-
-1 <= ```plants[i], sprinklers[i]``` <= 10 <sup>9</sup> 
+You are given a sequence of names. Name at i<sup>th</sup> position is served first, and then only you can move on to the next name.
 
 
 
 `Sample Input 1`
 <pre>
-<b>Input</b>: plants = [1,2,3], sprinklers = [2]
-<b>Output</b>: 1
-<b>Explanation</b>: The only sprinklers was placed in the position 2, and if we use the radius 1 standard, then all the plants can be warmed.
+<b>Input</b>: file-names = ["Valorant","GTA5","Fortnite","Valorant(2019)"]
+<b>Output</b>: ["Valorant","GTA5","Fortnite","Valorant(2019)"]
+<b>Explanation</b>: 
+"Valorant" -- not assigned before, remains "Valorant"
+"GTA5" -- not assigned before, remains "GTA5"
+"Fortnite" -- not assigned before, remains "Fortnite"
+"Valorant(2019)" -- not assigned before, remains "Valorant(2019)"
 </pre>
 
-
 `Sample Input 2`
-
 <pre>
-<b>Input</b>: plants = [1,2,3,4], sprinklers = [1,4]
-<b>Output</b>: 1
-<b>Explanation</b>: The two sprinklers was placed in the position 1 and 4. We need to use radius 1 standard, then all the plants can be warmed.
+<b>Input</b>: file-names = ["Valorant","Valorant(1)","Valorant","Valorant(2019)"]
+<b>Output</b>: ["Valorant","Valorant(1)","Valorant(2)","Valorant(2019)"]
+<b>Explanation</b>: 
+"Valorant" -- not assigned before, remains "Valorant"
+"Valorant(1)" -- not assigned before, remains "Valorant(1)"
+"Valorant" -- assigned before, so add a (i) suffix, with smallest positive valid i. Valorant(1) is already taken, so Valorant(2)
+"Valorant(2019)" -- not assigned before, remains "Valorant(2019)"
 </pre>
 
 
 `Sample Input 3`
 <pre>
-
-<b>Input</b>: 
-
-plants = [282475249,622650073,984943658,144108930,470211272,101027544,457850878,458777923],
-
-sprinklers = [823564440,115438165,784484492,74243042,114807987,137522503,441282327,16531729,823378840,143542612]
-
-<b>Output</b>: 161834419
+<b>Input</b>: file-names = ["naruto","naruto(1)","naruto(2)","naruto(3)", "naruto"]
+<b>Output</b>: ["naruto","naruto(1)","naruto(2)","naruto(3)", "naruto(4)"]
+<b>Explanation</b>: 
+"naruto" -- not assigned before, remains "naruto"
+"naruto(1)" -- not assigned before, remains "naruto(1)"
+"naruto(2)" -- not assigned before, remains "naruto(2)"
+"naruto" -- assigned before, so add a (i) suffix, with smallest positive valid i, which happens to be 3. So "naruto(3)"
 </pre>
+
 
 ---
