@@ -1,6 +1,6 @@
 # Trinkerr Backend Interview
 
-## English Assignment
+## Back to Binary
 
 Given 2 binary numbers, print the prime numbers in between those 2 binary numbers.
 
