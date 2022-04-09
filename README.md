@@ -72,9 +72,9 @@ You need to return an array of array grouping the anagram keys.
 `Sample Input 1`
 
 <pre>
-<b>Input</b>: keys = ["idea", "idae", "bsnl", "nsbl", "GRASIM", "bata"]
+<b>Input</b>: keys = ["idea", "idae", "bsnl", "nsbl", "grasim", "bata"]
 
-<b>Output</b>: [["idea", "idae"], ["bsnl", "nsbl"], ["bata"], ["GRASIM"]]
+<b>Output</b>: [["idea", "idae"], ["bsnl", "nsbl"], ["bata"], ["grasim"]]
 </pre>
 
 `Sample Input 2`
