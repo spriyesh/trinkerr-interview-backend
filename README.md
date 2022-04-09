@@ -1,67 +1,94 @@
 # Trinkerr Backend Interview
 
-## Back to Binary
+## Steps to make a number Special
 
-Given 2 binary numbers, print the prime numbers in between those 2 binary numbers.
+Given a number, determine the number of steps to reduce the number into `1`,  when we repeatedly do the operation of adding the squares of their digits. Return `-1` if it's not possible at all. 
 
 <br>
 
 `Input`
-You are given 2 binary numbers
+You are given a number
 
 `Sample Input 1`
 
 <pre>
-<b>Input</b>: num1 = 101, num2 = 11111
+<b>Input</b>: 13
 
-<b>Output</b>
-5, 7, 11, 13, 17, 19, 23, 29, 31
+<b>Output</b>: 2
+
+<b>Explanation</b>: 
+1*1 + 3*3 = 10
+1*1 + 0*0 = 1
+</pre>
+
+
+`Sample Input 2`
+
+<pre>
+<b>Input</b>: 2
+
+<b>Output</b>: -1
+
+<b>Explanation</b>: 
+You can't acheive 1 after doing these operation.
+</pre>
+
+
+`Sample Input 3`
+
+<pre>
+<b>Input</b>: 28
+
+<b>Output</b>: 3
+
+<b>Explanation</b>: 
+2*2 + 8*8 = 68
+6*6 + 8*8 = 100
+1*1 + 0*0 + 0*0 = 1
 </pre>
 
 ---
 
-## Designing File system
+## Intern
 
-You are a computer architect who is designing the file system for your operating system. The basic constraint for designing the file system is handling names in the directory. You cannot allow the same name for two files. Design a program to ensure the unique name of files. If there is already a file with the given name, add a number, i, surrounded by brackets to ensure uniqueness, such that this i is the smallest positive number, and the new name obtained is also unique.
+You've recently joined a company as an intern and you were playing around with the database of the company to get some stats asked by your manager. But due to a minor mistake in your script code, the keys of the database table got jumbled, and duplicates were also created for those keys. Now you have to clean this mess before anyone knows.
+
+Now, your task is to group all the (<b>the anagrams</b>) keys.
+
+<p>
+<blockquote>
+An Anagram is a word or phrase that is made by arranging the letters of another word or phrase in a different order.
+</blockquote>
+</p>
 
 `Input`:
+You are given a sequence of names key names.
 
-You are given a sequence of names. Name at i<sup>th</sup> position is served first, and then only you can move on to the next name.
+
+`Output`:
+You need to return an array of array grouping the anagram keys.
+
 
 `Sample Input 1`
 
 <pre>
-<b>Input</b>: file-names = ["Valorant","GTA5","Fortnite","Valorant(2019)"]
-<b>Output</b>: ["Valorant","GTA5","Fortnite","Valorant(2019)"]
-<b>Explanation</b>: 
-"Valorant" -- not assigned before, remains "Valorant"
-"GTA5" -- not assigned before, remains "GTA5"
-"Fortnite" -- not assigned before, remains "Fortnite"
-"Valorant(2019)" -- not assigned before, remains "Valorant(2019)"
+<b>Input</b>: keys = ["idea", "idae", "bsnl", "nsbl", "grasim", "bata"]
+
+<b>Output</b>: [["idea", "idae"], ["bsnl", "nsbl"], ["bata"], ["grasim"]]
 </pre>
 
 `Sample Input 2`
 
 <pre>
-<b>Input</b>: file-names = ["Valorant","Valorant(1)","Valorant","Valorant(2019)"]
-<b>Output</b>: ["Valorant","Valorant(1)","Valorant(2)","Valorant(2019)"]
-<b>Explanation</b>: 
-"Valorant" -- not assigned before, remains "Valorant"
-"Valorant(1)" -- not assigned before, remains "Valorant(1)"
-"Valorant" -- assigned before, so add a (i) suffix, with smallest positive valid i. Valorant(1) is already taken, so Valorant(2)
-"Valorant(2019)" -- not assigned before, remains "Valorant(2019)"
+<b>Input</b>: keys = ["data", "data"]
+
+<b>Output</b>: [ ["data", "data"] ]
 </pre>
 
-`Sample Input 3`
 
-<pre>
-<b>Input</b>: file-names = ["naruto","naruto(1)","naruto(2)","naruto(3)", "naruto"]
-<b>Output</b>: ["naruto","naruto(1)","naruto(2)","naruto(3)", "naruto(4)"]
-<b>Explanation</b>: 
-"naruto" -- not assigned before, remains "naruto"
-"naruto(1)" -- not assigned before, remains "naruto(1)"
-"naruto(2)" -- not assigned before, remains "naruto(2)"
-"naruto" -- assigned before, so add a (i) suffix, with smallest positive valid i, which happens to be 3. So "naruto(3)"
-</pre>
 
+NOTE: 
+1. All the letters are in lowercase. 
+2. Keys don't have a spaces in between them. So something like: 
+	"GM Birla" stock is not possible
 ---
