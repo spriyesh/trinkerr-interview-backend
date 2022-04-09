@@ -2,7 +2,7 @@
 
 ## Steps to make a number Special
 
-Given a number, determine the number of steps to reduce the number into 1,  when we repeatedly do the sum of the squares of their digits. Return -1 if it's not possible at all. 
+Given a number, determine the number of steps to reduce the number into `1`,  when we repeatedly do the operation of adding the squares of their digits. Return `-1` if it's not possible at all. 
 
 <br>
 
