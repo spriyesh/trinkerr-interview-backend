@@ -1,51 +1,54 @@
 # Trinkerr Backend Interview
 
-## Steps to make a number Special
+## Party with girlfriend
 
-Given a number, determine the number of steps to reduce the number into `1`,  when we repeatedly do the operation of adding the squares of their digits. Return `-1` if it's not possible at all. 
+You are invited to a party at one of the best hotels in the city. But it's a couple entry, so you are not allowed to go alone. So you asked your girlfriend for this party. She agreed to join you but has a condition. She wants both the couple should dress up in the same colour.
+
+You are given an array of colours, and you have to pick up the dress colours such that both you and your girlfriend should have the **same colour** and at the same time, ensure that your girlfriend's dress is selected after yours, i.e **index <sub>your dress</sub> < index <sub> your girlfriend's dress</sub>**
+
+You are a geek, so you decided to count the number of ways to do that. Return the number of ways possible, **Optimally**. 
+
 
 <br>
 
 `Input`
-You are given a number
+You are given an array of colours. 
 
 `Sample Input 1`
 
 <pre>
-<b>Input</b>: 13
+<b>Input</b>: [1,2,3,1,2]
 
 <b>Output</b>: 2
 
 <b>Explanation</b>: 
-1*1 + 3*3 = 10
-1*1 + 0*0 = 1
+You can select the colours at index (0, 3) or (1, 4).
 </pre>
 
 
 `Sample Input 2`
 
 <pre>
-<b>Input</b>: 2
+<b>Input</b>: [1,2,3]
 
-<b>Output</b>: -1
+<b>Output</b>: 0
 
 <b>Explanation</b>: 
-You can't acheive 1 after doing these operation.
+No pair possible. 
 </pre>
 
 
 `Sample Input 3`
 
 <pre>
-<b>Input</b>: 28
+<b>Input</b>: [1, 2, 1, 2, 1]
 
-<b>Output</b>: 3
+<b>Output</b>: 4
 
 <b>Explanation</b>: 
-2*2 + 8*8 = 68
-6*6 + 8*8 = 100
-1*1 + 0*0 + 0*0 = 1
+You can select the colours at index (0, 2) , (0, 4), (2, 4) and (1, 3).
 </pre>
+
 
 ---
 
