@@ -1,6 +1,6 @@
 # Trinkerr Backend Interview
 
-## Party with girlfriend
+## Couple entry
 
 You are invited to a party at one of the best hotels in the city. But it's a couple entry, so you are not allowed to go alone. So you asked your girlfriend for this party. She agreed to join you but has a condition. She wants both the couple should dress up in the same colour.
 
