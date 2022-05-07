@@ -4,7 +4,9 @@
 
 You have recently joined the college where you were introduced to programming in general. In one of your Strings classes, you learned that string addition is also possible in programming.
 
-You tried to do similar addition in numbers (concatenation) and noticed that new numbers formed can be really big. You got interested in the task and decided to calculate the sum of all those numbers formed by the transformations. Return the sum **Optimally!!**. 
+You tried to do similar addition in numbers (concatenation) and noticed that new numbers formed can be really big.
+
+You got interested in the task and decided to calculate the sum of all those numbers formed by the concatenation and then return the sum in an **Optimal** way.  
 
 String addition of two strings is :  `"a" + "b" = "ab"`.
 
