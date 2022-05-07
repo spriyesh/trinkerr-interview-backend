@@ -1,97 +1,89 @@
 # Trinkerr Backend Interview
 
-## Couple entry
+## Newbie Programmer
 
-You are invited to a party at one of the best hotels in the city. But it's a couple entry, so you are not allowed to go alone. So you asked your girlfriend for this party. She agreed to join you but has a condition. She wants both the couple should dress up in the same colour.
+You have recently joined the college where you were introduced to programming in general. In one of your Strings classes, you learned that string addition is also possible in programming.
 
-You are given an array of colours, and you have to pick up the dress colours such that both you and your girlfriend should have the **same colour** and at the same time, ensure that your girlfriend's dress is selected after yours, i.e **index <sub>your dress</sub> < index <sub> your girlfriend's dress</sub>**
+You tried to do similar addition in numbers (concatenation) and noticed that new numbers formed can be really big.
 
-You are a geek, so you decided to count the number of ways to do that. Return the number of ways possible, **Optimally**. 
+You got interested in the task and decided to calculate the sum of all those numbers formed by the concatenation and then return the sum in an **Optimal** way.  
 
+String addition of two strings is :  `"a" + "b" = "ab"`.
+
+**Note:** `a + b` and `b + a`  are treated differently in the transformation. **Transformation is concatenation of 2 values**.
 
 <br>
 
+`Constraints:`
+length of the array <= 10<sup>5</sup>
+
 `Input`
-You are given an array of colours. 
+You are given an array of numbers. 
 
 `Sample Input 1`
 
 <pre>
-<b>Input</b>: [1,2,3,1,2]
+<b>Input</b>: [10, 11]
 
-<b>Output</b>: 2
+<b>Output</b>: 4242
 
 <b>Explanation</b>: 
-You can select the colours at index (0, 3) or (1, 4).
+T<sub>1</sub>: 10 + 10 = 1010 (Index 0, Index 0)
+T<sub>2</sub>: 11 + 10 = 1110 (Index 1, Index 0)
+T<sub>3</sub>: 10 + 11 = 1011 (Index 0, Index 1)
+T<sub>4</sub>: 11 + 11 = 1111 (Index 1, Index 1)
 </pre>
 
 
 `Sample Input 2`
 
 <pre>
-<b>Input</b>: [1,2,3]
+<b>Input</b>: nums = [8, 10, 12]
 
-<b>Output</b>: 0
-
-<b>Explanation</b>: 
-No pair possible. 
-</pre>
-
-
-`Sample Input 3`
-
-<pre>
-<b>Input</b>: [1, 2, 1, 2, 1]
-
-<b>Output</b>: 4
+<b>Output</b>: 6390
 
 <b>Explanation</b>: 
-You can select the colours at index (0, 2) , (0, 4), (2, 4) and (1, 3).
+Numbers formed are: 88, 810, 812, 108, 1010, 1012, 128, 1210, 1212
 </pre>
+
 
 
 ---
 
-## Intern
+## Mirror Image
 
-You've recently joined a company as an intern and you were playing around with the database of the company to get some stats asked by your manager. But due to a minor mistake in your script code, the keys of the database table got jumbled, and duplicates were also created for those keys. Now you have to clean this mess before anyone knows.
 
-Now, your task is to group all the (<b>the anagrams</b>) keys.
+Given a string, determine its mirror image. 
+A mirror image of a string is a string in which all the alphabets are reversed. All other characters are untouched. 
 
-<p>
-<blockquote>
-An Anagram is a word or phrase that is made by arranging the letters of another word or phrase in a different order.
-</blockquote>
-</p>
 
 `Input`:
-You are given a sequence of names key names.
+You are given a string.
 
 
 `Output`:
-You need to return an array of array grouping the anagram keys.
-
+Return the mirror image of the string
 
 `Sample Input 1`
 
 <pre>
-<b>Input</b>: keys = ["idea", "idae", "bsnl", "nsbl", "grasim", "bata"]
+<b>Input</b>: "ab-cd"
 
-<b>Output</b>: [["idea", "idae"], ["bsnl", "nsbl"], ["bata"], ["grasim"]]
+<b>Output</b>: "dc-ba"
 </pre>
 
 `Sample Input 2`
 
 <pre>
-<b>Input</b>: keys = ["data", "data"]
+<b>Input</b>: "a-bC-dEf-ghIj"
 
-<b>Output</b>: [ ["data", "data"] ]
+<b>Output</b>: "j-Ih-gfE-dCba"
 </pre>
 
 
 
 NOTE: 
-1. All the letters are in lowercase. 
-2. Keys don't have a spaces in between them. So something like: 
-	"GM Birla" stock is not possible
+1. input consists of characters with ASCII values in the range [33, 122].
+2. input does not contain `'\"' or '\\'`.
+
 ---
