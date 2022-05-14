@@ -1,89 +1,79 @@
 # Trinkerr Backend Interview
 
-## Newbie Programmer
+## Stranger's Call
 
-You have recently joined the college where you were introduced to programming in general. In one of your Strings classes, you learned that string addition is also possible in programming.
+You are stuck in the maze and have no idea of how to get outside it. You received an anonymous call from someone, offering to help you. You don't know that person but you agreed to accept his help since you were desperate to get out of the maze. 
 
-You tried to do similar addition in numbers (concatenation) and noticed that new numbers formed can be really big.
+The person gave you a set of directions to follow, to get you out of the maze. Let **"N"** denote **north** side movement, **"E"** denote **eastward** movement, **"W"** denote **west** and **"S"** denote movement in the **south**. Distance travelled will be the same in each direction, i.e 1m. 
 
-You got interested in the task and decided to calculate the sum of all those numbers formed by the concatenation and then return the sum in an **Optimal** way.  
+But deep down, you still don't trust the person, that's why you decided to verify his instructions. You decided to calculate where you'll reach after following the instructions. **Determine whether you will remain in the same position after following the instructions or not.**
 
-String addition of two strings is :  `"a" + "b" = "ab"`.
-
-**Note:** `a + b` and `b + a`  are treated differently in the transformation. **Transformation is concatenation of 2 values**.
 
 <br>
 
 `Constraints:`
-length of the array <= 10<sup>5</sup>
+Length of the string is <= 10<sup>5</sup>
 
 `Input`
-You are given an array of numbers. 
+Given a string, containing only "N", "S", "W", and "E" characters.
 
 `Sample Input 1`
 
 <pre>
-<b>Input</b>: [10, 11]
+<b>Input</b>: "NWE"
 
-<b>Output</b>: 4242
+<b>Output</b>: false
 
 <b>Explanation</b>: 
-T<sub>1</sub>: 10 + 10 = 1010 (Index 0, Index 0)
-T<sub>2</sub>: 11 + 10 = 1110 (Index 1, Index 0)
-T<sub>3</sub>: 10 + 11 = 1011 (Index 0, Index 1)
-T<sub>4</sub>: 11 + 11 = 1111 (Index 1, Index 1)
+After following the instructions, you won't be at the same place
 </pre>
 
 
 `Sample Input 2`
 
 <pre>
-<b>Input</b>: nums = [8, 10, 12]
+<b>Input</b>: "NWSE"
 
-<b>Output</b>: 6390
+<b>Output</b>: true
 
 <b>Explanation</b>: 
-Numbers formed are: 88, 810, 812, 108, 1010, 1012, 128, 1210, 1212
+You will end up in the same position as in the beginning
 </pre>
 
 
 
 ---
 
-## Mirror Image
+## Deadliest Weapons 
 
 
-Given a string, determine its mirror image. 
-A mirror image of a string is a string in which all the alphabets are reversed. All other characters are untouched. 
+You are the supreme commander of the army, and you must ensure that the weapons you have in your artillery are deadly. Each weapon has a rating denoting how leathal the weapon is when used alone called the **deadly score**. You have a bunch of weapons and it's your duty to use the weapons in such sync that their deadly score is at their best. Determine the **highest deadly score of the weapons possible**.
+
+The deadly score of two weapons is calculated by appending the deadly score of individual weapons. Eg. let's say weapon A has a deadly score of 23 and Weapon B has a deadly score of 46. So the possible deadly scores of A and B can be 2346 or 4623.
 
 
 `Input`:
-You are given a string.
+You are given an array of numbers denoting the deadly score of individual weapon.
 
 
 `Output`:
-Return the mirror image of the string
+Return the maximum deadly score possible (In string) since this number can be huge.
 
 `Sample Input 1`
 
 <pre>
-<b>Input</b>: "ab-cd"
+<b>Input</b>: [9, 2, 4]
 
-<b>Output</b>: "dc-ba"
+<b>Output</b>: "942"
 </pre>
 
 `Sample Input 2`
 
 <pre>
-<b>Input</b>: "a-bC-dEf-ghIj"
+<b>Input</b>: [3,30,9]
 
-<b>Output</b>: "j-Ih-gfE-dCba"
+<b>Output</b>: "9330"
 </pre>
 
-
-
-NOTE: 
-1. input consists of characters with ASCII values in the range [33, 122].
-2. input does not contain `'\"' or '\\'`.
 
 ---
